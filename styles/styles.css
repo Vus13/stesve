@@ -1,0 +1,106 @@
+.headerStyle {
+	min-height: 0px;
+	position: absolute;
+	margin-top: 0px;
+}
+
+.headerStyle #internalNavBackBtn {
+	height: 15px;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+.centerWrapper {
+	text-align: center;
+}
+
+.centerWrapper * {
+	margin: 0 auto;
+}
+
+.ui-btn-left {
+	background-image: -webkit-linear-gradient(270deg,rgba(16,116,137,1.00) 0%,rgba(104,190,201,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(16,116,137,1.00) 0%,rgba(104,190,201,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(16,116,137,1.00) 0%,rgba(104,190,201,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(16,116,137,1.00) 0%,rgba(104,190,201,1.00) 100%);
+	color: #FFFFFF !important;
+	text-shadow: 0px 1px 5px #333333 !important;
+	float: left;
+	max-width: 34%;
+	/* [disabled]margin-top: -15px !important; */
+	height: 15px;
+	margin-top: -15px !important;
+	top: 50%;
+}
+.floatRight {
+	width: 66%;
+	float: right;
+	height: 15px;
+	top: 50%;
+}
+.footerFloat {
+	min-height: 0px;
+	position: absolute;
+	margin-top: 0px;
+	padding: 2px 0px;
+}
+#moreBtn {
+	width: 95% !important;
+}
+.button-wrap {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#imgListView {
+	padding-top: 9px;
+}
+.ingridients {
+	float: right;
+	padding-right: 25px;
+	clear: right;
+}
+.imgProductPage {
+	padding-top: 8px;
+	padding-left: 30px;
+	float: left;
+}
+.priceTag {
+	clear: both;
+}
+.smallPrint {
+	font-size: x-small;
+	color: #333333;
+	margin-top: -10px;
+}
+.prodSum {
+	float: right;
+	clear: both;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.totalText {
+	float: left;
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #000000;
+}
+.sumBefore {
+	float: right;
+	padding-top: 15px;
+	border-bottom: 1px solid #333333;
+	clear: both;
+}
+.sumAfter {
+	float: right;
+	padding-top: 7px;
+	border-bottom: double;
+	clear: both;
+}
+.total {
+	height:30px;
+}
+.delete-btn {
+}
+#testBtn {
+	height:100px;	
+}

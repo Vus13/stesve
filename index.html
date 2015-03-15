@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mediq - Stesve version</title>
+<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet" type="text/css">
+<link href="styles/mediq.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+<script src="cordova.js"></script>
+<meta name ="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+</head>
+<body>
+<div data-role="page" id="frontPage">
+<header data-role="header" data-position="fixed" data-theme="a" data-id="persistant-header">
+      <div class="centerWrapper"><img src="images/logo.png" alt="Mediq Danmark Logo" width="150" height="68" id="navBarImg" title="Logo"/></div>
+</header>
+<div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#sendImage">
+        <h3>Send Den Grønne Ordination</h3>
+        <p>Som sundhedsfagligt personel kan du<br>hurtigt og nemt hjælpe din patient<br>ved at sende den grønne ordination.<br>Det tager mindre end 1 minut.</p>
+      </a></li>
+      
+
+      </ul>
+   </div>
+<footer data-role="footer" data-position="fixed" data-theme="a" data-id="persistant-footer">
+  	  <div id="navBtn" data-role="navbar">
+          <ul>
+            <li><a href="#" data-rel="back">Tilbage</a></li>
+            <li><a href="#frontPage">Forside</a></li>
+<!--            <li><a href="#basket">Kurv</a></li>
+-->          </ul>
+      </div>
+    	<h4>Mediq Danmark &copy; 2014</h4>
+</footer>
+  </div><!--frontpage-->
+
+
+
+<!--Start of the page where the doctor can easily and fast send an image of the prescription to Mediq-->
+<div data-role="page" id="sendImage">
+<header data-role="header" data-position="fixed" data-theme="a" data-id="persistant-header">
+      <div class="centerWrapper"><img src="images/logo.png" alt="Mediq Danmark Logo" width="150" height="68" id="navBarImg" title="Logo"/></div>
+</header>
+
+
+	<div data-role="content">
+	<div id="beforeImg"> <!--  Start of div to be hidden after the image is taken-->
+        <p>Tag et billede af den grønne ordination og send den til os, så sørger vi for at den  helt rigtige ernærings drik bliver ordineret.</p>
+        <button id="takePicture">Tag Billede</button><br>
+    </div> <!--end of the section that is going to be hidden after the image is taken-->
+    	<div id="showAfterImage" hidden="">
+            
+            	<p>Det vil være en stor hjælp for os hvis du vil sende lidt information med.</p>
+                <div data-role="fieldcontain">
+                    <label for="textinput"></label>
+                    <input type="text" name="textinput" id="patientName" placeholder="Navn"  />
+                    <label for="tel"></label>
+                    <input name="tel" type="tel" id="tel" placeholder="Mobil nummer" />
+      			</div>
+                <button id="sendMail">Send Billedet Pr. Mail</button><br>
+
+
+    	</div>
+	</div>
+
+    
+<footer data-role="footer" data-position="fixed" data-theme="a" data-id="persistant-footer">
+  	  <div id="navBtn" data-role="navbar">
+          <ul>
+            <li><a href="#" data-rel="back">Tilbage</a></li>
+            <li><a href="#frontPage">Forside</a></li>
+<!--            <li><a href="#basket">Kurv</a></li>
+-->          </ul>
+      </div>
+    	<h4>Mediq Danmark &copy; 2014</h4>
+</footer>
+</div><!--End of send email page-->
+
+
+
+
+
+
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
